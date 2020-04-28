@@ -7,8 +7,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_USER: XXXX
-      MYSQL_PASSWORD: ********
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
       MYSQL_DATABASE: mydb
       
   joomlaos:
@@ -22,6 +22,6 @@ services:
       - 8080:80
     environment:
       JOOMLA_DB_HOST: dbos
-      JOOMLA_DB_USER: XXXX
-      JOOMLA_DB_PASSWORD: ********
+      JOOMLA_DB_USER: user
+      JOOMLA_DB_PASSWORD: password
       JOOMLA_DB_NAME: mydb
